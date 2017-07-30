@@ -17,7 +17,7 @@ public class Queue<T> {
 	private Node<T> end;
 	private int size;
 	
-	//Add item to the end of list
+	//add item to the end of list
 	public void add (T item){
 		Node<T> addOn = new Node<T> (item);
 		if (size == 0){
@@ -33,7 +33,7 @@ public class Queue<T> {
 		}
 	}
 	
-	//Remove first item in the list
+	//remove first item in the list
 	public T remove (T item){
 		if (size == 0){
 			throw new NoSuchElementException ("Sorry there is nothing to be removed");
